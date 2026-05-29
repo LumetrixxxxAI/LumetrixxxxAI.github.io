@@ -140,6 +140,10 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
   .fg-2{grid-template-columns:1fr}
   .W{padding:0 20px}
 }
+
+.svc-card .svc-link svg{transition:transform .2s ease}
+.svc-card:hover .svc-link svg{transform:translateX(5px)}
+.svc-card{transition:all .28s cubic-bezier(.25,.46,.45,.94)}
 </style>
 </head>
 <body>
@@ -147,7 +151,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
 <nav>
   <div class="W">
     <div class="nav-w">
-      <a href="index.html"><img style="height:36px;width:auto;display:block" src="__LOGO__" alt="Lumetrix"/></a>
+      <a href="index.html" style="color:#111827;font-weight:500;"><img style="height:36px;width:auto;display:block" src="__LOGO__" alt="Lumetrix"/></a>
       <ul class="nav-links">
         <li><a href="agentes.html">Agentes IA</a></li>
         <li><a href="automatizaciones.html">Automatizaciones</a></li>
@@ -255,8 +259,8 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
       </div>
 
       <div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:0">
-        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#059669,#047857);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(5,150,105,.25);margin-bottom:16px;flex-shrink:0">
-          <span style="font-family:'DM Serif Display',serif;font-size:1.6rem;color:#fff;line-height:1">03</span>
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#1d4ed8);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(37,99,235,.25);margin-bottom:16px;flex-shrink:0;border:2px solid rgba(255,255,255,.2)">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 14l6 6 10-12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3 style="font-size:.95rem;font-weight:600;color:var(--text);margin-bottom:7px">Empieza a funcionar</h3>
         <p style="font-size:.83rem;color:var(--muted);line-height:1.65;max-width:200px">Activo en menos de 48h. Soporte continuo incluido sin coste extra.</p>
