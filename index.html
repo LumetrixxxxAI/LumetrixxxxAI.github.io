@@ -90,6 +90,13 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);border-bo
 .svc-card h3{font-family:'DM Serif Display',serif;font-size:1.35rem;font-weight:400;color:var(--text);margin-bottom:10px}
 .svc-card p{font-size:.875rem;color:var(--muted);line-height:1.68;margin-bottom:22px}
 .svc-link{font-size:.82rem;font-weight:600;display:flex;align-items:center;gap:6px;transition:gap .2s}
+.svc-price{display:inline-flex;align-items:baseline;gap:3px;margin-bottom:18px;padding:6px 12px;border-radius:20px;font-size:.78rem;background:rgba(0,0,0,.04)}
+.svc-card.blue .svc-price{background:var(--blue-pale);color:var(--blue)}
+.svc-card.purple .svc-price{background:var(--purple-pale);color:var(--purple)}
+.svc-card.green .svc-price{background:var(--green-pale);color:var(--green)}
+.svc-card.orange .svc-price{background:var(--orange-pale);color:var(--orange)}
+.svc-price .price-desde{font-size:.72rem;font-weight:500;opacity:.75}
+.svc-price .price-num{font-weight:700;font-size:.88rem}
 .svc-card.blue .svc-link{color:var(--blue)}
 .svc-card.purple .svc-link{color:var(--purple)}
 .svc-card.green .svc-link{color:var(--green)}
@@ -202,7 +209,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
         </div>
         <h3>Agentes IA</h3>
         <p>Asistentes inteligentes que atienden a tus clientes 24/7, responden preguntas y gestionan solicitudes de forma autónoma.</p>
-        <div class="svc-link">Descubrir agentes IA <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <div class="svc-price"><span class="price-desde">desde</span><span class="price-num">199€</span></div><div class="svc-link">Descubrir agentes IA <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
       </a>
 
       <a href="automatizaciones.html" class="svc-card purple">
@@ -211,7 +218,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
         </div>
         <h3>Automatizaciones</h3>
         <p>Automatiza WhatsApp, reservas, respuestas y procesos repetitivos para que tu negocio funcione sin intervención manual.</p>
-        <div class="svc-link">Ver automatizaciones <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <div class="svc-price"><span class="price-desde">desde</span><span class="price-num">199€</span></div><div class="svc-link">Ver automatizaciones <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
       </a>
 
       <a href="productos.html" class="svc-card green">
@@ -220,7 +227,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
         </div>
         <h3>Aplicaciones</h3>
         <p>Apps inteligentes para el día a día personal. Work IA y Family Task — herramientas que te ahorran tiempo fuera del trabajo.</p>
-        <div class="svc-link">Ver aplicaciones <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <div class="svc-price"><span class="price-desde">Próximamente</span></div><div class="svc-link">Ver aplicaciones <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
       </a>
 
       <a href="webs.html" class="svc-card orange">
@@ -229,7 +236,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
         </div>
         <h3>Páginas web</h3>
         <p>Diseño y desarrollo de webs profesionales para empresas. Modernas, rápidas y optimizadas para conseguir clientes.</p>
-        <div class="svc-link">Ver páginas web <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+        <div class="svc-price"><span class="price-desde">desde</span><span class="price-num">350€</span></div><div class="svc-link">Ver páginas web <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2.5 6.5h8M6.5 2.5l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
       </a>
 
     </div>
