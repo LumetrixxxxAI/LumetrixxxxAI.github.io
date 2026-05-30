@@ -205,7 +205,7 @@ footer{background:#111827;color:rgba(255,255,255,.4)}
           <div class="fg"><label>Empresa</label><input type="text" placeholder="Tu negocio (opcional)"/></div>
         </div>
         <div class="fg"><label>Email *</label><input type="email" placeholder="tu@email.com" id="iEmail"/></div>
-        <div class="fg"><label>WhatsApp</label><input type="tel" placeholder="+34 600 000 000"/></div>
+        <div class="fg"><label>WhatsApp</label><input type="tel" placeholder="+34 600 000 000" id="iPhone" maxlength="16"/></div>
         <div class="fg">
           <label>¿Qué servicio te interesa? *</label>
           <select id="iServicio">
@@ -343,6 +343,16 @@ document.getElementById('fsub').addEventListener('click',function(){
     btn.disabled=false;btn.innerHTML='Enviar solicitud';
     alert('Error de red. Inténtalo de nuevo.');
   });
+});
+document.getElementById('iPhone').addEventListener('input',function(){
+  var v=this.value.replace(/\D/g,'');
+  var out='';
+  if(v.startsWith('34'))v=v.slice(2);
+  if(v.length<=3)out=v;
+  else if(v.length<=5)out=v.slice(0,3)+' '+v.slice(3);
+  else if(v.length<=7)out=v.slice(0,3)+' '+v.slice(3,5)+' '+v.slice(5);
+  else out=v.slice(0,3)+' '+v.slice(3,5)+' '+v.slice(5,7)+' '+v.slice(7,9);
+  this.value=out;
 });
 var ss=document.createElement('style');
 ss.textContent='@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}';
